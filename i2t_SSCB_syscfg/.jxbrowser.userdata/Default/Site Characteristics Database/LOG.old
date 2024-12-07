@@ -1,0 +1,5 @@
+2024/12/04-16:53:25.971 623c Log #3: 2 ops saved to Table #4 OK
+2024/12/04-16:53:25.971 623c Archiving C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\.jxbrowser.userdata\Default\Site Characteristics Database/000003.log: OK
+2024/12/04-16:53:25.971 623c Table #4: 2 entries OK
+2024/12/04-16:53:25.972 623c Archiving C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\.jxbrowser.userdata\Default\Site Characteristics Database/MANIFEST-000001: OK
+2024/12/04-16:53:25.983 623c **** Repaired leveldb C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\.jxbrowser.userdata\Default\Site Characteristics Database; recovered 1 files; 191 bytes. Some data may have been lost. ****

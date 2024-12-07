@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;i2t_SSCB_syscfg2/i2t_new.syscfg&apos; to &apos;i2t_SSCB.syscfg&apos;" description="Rename resource &apos;i2t_new.syscfg&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="i2t_new.syscfg" name="i2t_SSCB.syscfg" stamp="1733396723314" updateReferences="true"/>
+</session>

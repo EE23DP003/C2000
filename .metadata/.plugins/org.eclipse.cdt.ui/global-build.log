@@ -1,0 +1,1343 @@
+
+**** Clean-only build of configuration CPU1_RAM for project LED_Toggle ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 clean -O 
+ 
+DEL /F  "syscfg\board.h" "syscfg\board.cmd.genlibs" "syscfg\board.json" "syscfg\pinmux.csv" "syscfg\c2000ware_libraries.cmd.genlibs" "syscfg\c2000ware_libraries.h" "syscfg\clocktree.h"  "syscfg\board.c" "syscfg\board.opt" "syscfg\c2000ware_libraries.opt" "syscfg\c2000ware_libraries.c"  "LED_Toggle.out" 
+DEL /F "LED_Toggle.obj" "syscfg\board.obj" "syscfg\c2000ware_libraries.obj" "device\F2837xD_CodeStartBranch.obj" "device\device.obj" 
+DEL /F "LED_Toggle.d" "syscfg\board.d" "syscfg\c2000ware_libraries.d" "device\device.d" 
+DEL /F "device\F2837xD_CodeStartBranch.d" 
+RMDIR /S/Q  "syscfg" 
+Could Not Find C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_RAM\device\F2837xD_CodeStartBranch.d
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_RAM for project LED_Toggle ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../LED_Toggle.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1240/ccs/utils/sysconfig_1.21.0/sysconfig_cli.bat" --script "C:/Users/DELL/GitHub/C2000/LED_Toggle/LED_Toggle.syscfg" -o "syscfg" -s "C:/ti/c2000/C2000Ware_5_04_00_00/.metadata/sdk.json" -d "F2837xD" --compiler ccs
+Running script...
+Validating...
+Generating Code (LED_Toggle.syscfg)...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_RAM\syscfg\board.c...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_RAM\syscfg\board.h...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_RAM\syscfg\board.cmd.genlibs...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_RAM\syscfg\board.opt...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_RAM\syscfg\board.json...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_RAM\syscfg\pinmux.csv...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_RAM\syscfg\c2000ware_libraries.cmd.genlibs...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_RAM\syscfg\c2000ware_libraries.opt...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_RAM\syscfg\c2000ware_libraries.c...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_RAM\syscfg\c2000ware_libraries.h...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_RAM\syscfg\clocktree.h...
+Finished building: "../LED_Toggle.syscfg"
+ 
+Building file: "../device/F2837xD_CodeStartBranch.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="device/F2837xD_CodeStartBranch.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle/CPU1_RAM/syscfg" --obj_directory="device" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../device/F2837xD_CodeStartBranch.asm"
+Finished building: "../device/F2837xD_CodeStartBranch.asm"
+ 
+Building file: "syscfg/c2000ware_libraries.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="syscfg/c2000ware_libraries.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle/CPU1_RAM/syscfg" --obj_directory="syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "syscfg/c2000ware_libraries.c"
+Finished building: "syscfg/c2000ware_libraries.c"
+ 
+Building file: "../LED_Toggle.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="LED_Toggle.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle/CPU1_RAM/syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../LED_Toggle.c"
+Finished building: "../LED_Toggle.c"
+ 
+Building file: "syscfg/board.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="syscfg/board.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle/CPU1_RAM/syscfg" --obj_directory="syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "syscfg/board.c"
+Finished building: "syscfg/board.c"
+ 
+Building file: "../device/device.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="device/device.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle/CPU1_RAM/syscfg" --obj_directory="device" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../device/device.c"
+Finished building: "../device/device.c"
+ 
+Building target: "LED_Toggle.out"
+Invoking: C2000 Linker
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --define=DEBUG --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"LED_Toggle.map" --heap_size=0x200 --stack_size=0x3F8 --warn_sections -i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/lib" -i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --reread_libs --define=RAM --diag_wrap=off --display_error_number --xml_link_info="LED_Toggle_linkInfo.xml" --entry_point=code_start --rom_model -o "LED_Toggle.out" "./LED_Toggle.obj" "./syscfg/board.obj" "./syscfg/c2000ware_libraries.obj" "./device/F2837xD_CodeStartBranch.obj" "./device/device.obj" "../2837xD_RAM_lnk_cpu1.cmd" "C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/ccs/Debug/driverlib.lib"  -llibc.a 
+<Linking>
+Finished building target: "LED_Toggle.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_RAM for project LED_Toggle ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'LED_Toggle.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_RAM for project LED_Toggle ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../LED_Toggle.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="LED_Toggle.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle/CPU1_RAM/syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../LED_Toggle.c"
+Finished building: "../LED_Toggle.c"
+ 
+Building target: "LED_Toggle.out"
+Invoking: C2000 Linker
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --define=DEBUG --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"LED_Toggle.map" --heap_size=0x200 --stack_size=0x3F8 --warn_sections -i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/lib" -i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --reread_libs --define=RAM --diag_wrap=off --display_error_number --xml_link_info="LED_Toggle_linkInfo.xml" --entry_point=code_start --rom_model -o "LED_Toggle.out" "./LED_Toggle.obj" "./syscfg/board.obj" "./syscfg/c2000ware_libraries.obj" "./device/F2837xD_CodeStartBranch.obj" "./device/device.obj" "../2837xD_RAM_lnk_cpu1.cmd" "C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/ccs/Debug/driverlib.lib"  -llibc.a 
+<Linking>
+Finished building target: "LED_Toggle.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_RAM for project LED_Toggle ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'LED_Toggle.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_RAM for project LED_Toggle ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../LED_Toggle.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1240/ccs/utils/sysconfig_1.21.0/sysconfig_cli.bat" --script "C:/Users/DELL/GitHub/C2000/LED_Toggle/LED_Toggle.syscfg" -o "syscfg" -s "C:/ti/c2000/C2000Ware_5_04_00_00/.metadata/sdk.json" -d "F2837xD" --compiler ccs
+Running script...
+Validating...
+Generating Code (LED_Toggle.syscfg)...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_RAM\syscfg\board.c...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_RAM\syscfg\board.h...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_RAM\syscfg\board.cmd.genlibs...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_RAM\syscfg\board.opt...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_RAM\syscfg\board.json...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_RAM\syscfg\pinmux.csv...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_RAM\syscfg\c2000ware_libraries.cmd.genlibs...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_RAM\syscfg\c2000ware_libraries.opt...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_RAM\syscfg\c2000ware_libraries.c...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_RAM\syscfg\c2000ware_libraries.h...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_RAM\syscfg\clocktree.h...
+Finished building: "../LED_Toggle.syscfg"
+ 
+Building file: "../device/F2837xD_CodeStartBranch.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="device/F2837xD_CodeStartBranch.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle/CPU1_RAM/syscfg" --obj_directory="device" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../device/F2837xD_CodeStartBranch.asm"
+Finished building: "../device/F2837xD_CodeStartBranch.asm"
+ 
+Building file: "../LED_Toggle.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="LED_Toggle.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle/CPU1_RAM/syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../LED_Toggle.c"
+Finished building: "../LED_Toggle.c"
+ 
+Building file: "../device/device.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="device/device.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle/CPU1_RAM/syscfg" --obj_directory="device" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../device/device.c"
+Finished building: "../device/device.c"
+ 
+Building file: "syscfg/board.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="syscfg/board.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle/CPU1_RAM/syscfg" --obj_directory="syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "syscfg/board.c"
+Finished building: "syscfg/board.c"
+ 
+Building file: "syscfg/c2000ware_libraries.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="syscfg/c2000ware_libraries.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle/CPU1_RAM/syscfg" --obj_directory="syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "syscfg/c2000ware_libraries.c"
+Finished building: "syscfg/c2000ware_libraries.c"
+ 
+Building target: "LED_Toggle.out"
+Invoking: C2000 Linker
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --define=DEBUG --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"LED_Toggle.map" --heap_size=0x200 --stack_size=0x3F8 --warn_sections -i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/lib" -i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --reread_libs --define=RAM --diag_wrap=off --display_error_number --xml_link_info="LED_Toggle_linkInfo.xml" --entry_point=code_start --rom_model -o "LED_Toggle.out" "./LED_Toggle.obj" "./syscfg/board.obj" "./syscfg/c2000ware_libraries.obj" "./device/F2837xD_CodeStartBranch.obj" "./device/device.obj" "../2837xD_RAM_lnk_cpu1.cmd" "C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/ccs/Debug/driverlib.lib"  -llibc.a 
+<Linking>
+Finished building target: "LED_Toggle.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_RAM for project LED_Toggle ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'LED_Toggle.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_RAM for project LED_Toggle ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'LED_Toggle.out' is up to date.
+
+**** Build Finished ****
+
+**** Clean-only build of configuration CPU1_FLASH for project LED_Toggle ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 clean -O 
+ 
+DEL /F  "syscfg\board.h" "syscfg\board.cmd.genlibs" "syscfg\board.json" "syscfg\pinmux.csv" "syscfg\c2000ware_libraries.cmd.genlibs" "syscfg\c2000ware_libraries.h" "syscfg\clocktree.h"  "syscfg\board.c" "syscfg\board.opt" "syscfg\c2000ware_libraries.opt" "syscfg\c2000ware_libraries.c"  "LED_Toggle.out" 
+DEL /F "LED_Toggle.obj" "syscfg\board.obj" "syscfg\c2000ware_libraries.obj" "device\F2837xD_CodeStartBranch.obj" "device\device.obj" 
+DEL /F "LED_Toggle.d" "syscfg\board.d" "syscfg\c2000ware_libraries.d" "device\device.d" 
+DEL /F "device\F2837xD_CodeStartBranch.d" 
+RMDIR /S/Q  "syscfg" 
+Could Not Find C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_FLASH\device\F2837xD_CodeStartBranch.d
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_FLASH for project LED_Toggle ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../LED_Toggle.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1240/ccs/utils/sysconfig_1.21.0/sysconfig_cli.bat" --script "C:/Users/DELL/GitHub/C2000/LED_Toggle/LED_Toggle.syscfg" -o "syscfg" -s "C:/ti/c2000/C2000Ware_5_04_00_00/.metadata/sdk.json" -d "F2837xD" --compiler ccs
+Running script...
+Validating...
+Generating Code (LED_Toggle.syscfg)...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_FLASH\syscfg\board.c...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_FLASH\syscfg\board.h...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_FLASH\syscfg\board.cmd.genlibs...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_FLASH\syscfg\board.opt...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_FLASH\syscfg\board.json...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_FLASH\syscfg\pinmux.csv...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_FLASH\syscfg\c2000ware_libraries.cmd.genlibs...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_FLASH\syscfg\c2000ware_libraries.opt...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_FLASH\syscfg\c2000ware_libraries.c...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_FLASH\syscfg\c2000ware_libraries.h...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle\CPU1_FLASH\syscfg\clocktree.h...
+Finished building: "../LED_Toggle.syscfg"
+ 
+Building file: "../device/F2837xD_CodeStartBranch.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=CPU1 --define=_FLASH --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="device/F2837xD_CodeStartBranch.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle/CPU1_FLASH/syscfg" --obj_directory="device" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../device/F2837xD_CodeStartBranch.asm"
+Finished building: "../device/F2837xD_CodeStartBranch.asm"
+ 
+Building file: "../LED_Toggle.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=CPU1 --define=_FLASH --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="LED_Toggle.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle/CPU1_FLASH/syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../LED_Toggle.c"
+Finished building: "../LED_Toggle.c"
+ 
+Building file: "syscfg/board.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=CPU1 --define=_FLASH --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="syscfg/board.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle/CPU1_FLASH/syscfg" --obj_directory="syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "syscfg/board.c"
+Finished building: "syscfg/board.c"
+ 
+Building file: "syscfg/c2000ware_libraries.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=CPU1 --define=_FLASH --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="syscfg/c2000ware_libraries.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle/CPU1_FLASH/syscfg" --obj_directory="syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "syscfg/c2000ware_libraries.c"
+Finished building: "syscfg/c2000ware_libraries.c"
+ 
+Building file: "../device/device.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=CPU1 --define=_FLASH --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="device/device.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle/CPU1_FLASH/syscfg" --obj_directory="device" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../device/device.c"
+Finished building: "../device/device.c"
+ 
+Building target: "LED_Toggle.out"
+Invoking: C2000 Linker
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --define=DEBUG --define=CPU1 --define=_FLASH --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"LED_Toggle.map" --heap_size=0x200 --stack_size=0x3F8 --warn_sections -i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/lib" -i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="LED_Toggle_linkInfo.xml" --entry_point=code_start --rom_model -o "LED_Toggle.out" "./LED_Toggle.obj" "./syscfg/board.obj" "./syscfg/c2000ware_libraries.obj" "./device/F2837xD_CodeStartBranch.obj" "./device/device.obj" "../2837xD_FLASH_lnk_cpu1.cmd" "C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/ccs/Debug/driverlib.lib"  -llibc.a 
+<Linking>
+Finished building target: "LED_Toggle.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_FLASH for project LED_Toggle ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'LED_Toggle.out' is up to date.
+
+**** Build Finished ****
+
+**** Clean-only build of configuration CPU1_FLASH for project LED_Toggle_CPU_Timer ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 clean -O 
+ 
+DEL /F  "syscfg\board.h" "syscfg\board.cmd.genlibs" "syscfg\board.json" "syscfg\pinmux.csv" "syscfg\c2000ware_libraries.cmd.genlibs" "syscfg\c2000ware_libraries.h" "syscfg\clocktree.h"  "syscfg\board.c" "syscfg\board.opt" "syscfg\c2000ware_libraries.opt" "syscfg\c2000ware_libraries.c"  "LED_Toggle_CPU_Timer.out" 
+DEL /F "LED_Toggle.obj" "syscfg\board.obj" "syscfg\c2000ware_libraries.obj" "device\F2837xD_CodeStartBranch.obj" "device\device.obj" 
+DEL /F "LED_Toggle.d" "syscfg\board.d" "syscfg\c2000ware_libraries.d" "device\device.d" 
+DEL /F "device\F2837xD_CodeStartBranch.d" 
+RMDIR /S/Q  "syscfg" 
+Could Not Find C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_FLASH\LED_Toggle_CPU_Timer.out
+Could Not Find C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_FLASH\device\F2837xD_CodeStartBranch.d
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_FLASH for project LED_Toggle_CPU_Timer ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../LED_Toggle_CPU_Timer.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1240/ccs/utils/sysconfig_1.21.0/sysconfig_cli.bat" --script "C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/LED_Toggle_CPU_Timer.syscfg" -o "syscfg" -s "C:/ti/c2000/C2000Ware_5_04_00_00/.metadata/sdk.json" -d "F2837xD" --compiler ccs
+Running script...
+Validating...
+Generating Code (LED_Toggle_CPU_Timer.syscfg)...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_FLASH\syscfg\board.c...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_FLASH\syscfg\board.h...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_FLASH\syscfg\board.cmd.genlibs...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_FLASH\syscfg\board.opt...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_FLASH\syscfg\board.json...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_FLASH\syscfg\pinmux.csv...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_FLASH\syscfg\c2000ware_libraries.cmd.genlibs...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_FLASH\syscfg\c2000ware_libraries.opt...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_FLASH\syscfg\c2000ware_libraries.c...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_FLASH\syscfg\c2000ware_libraries.h...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_FLASH\syscfg\clocktree.h...
+Finished building: "../LED_Toggle_CPU_Timer.syscfg"
+ 
+Building file: "../device/F2837xD_CodeStartBranch.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=CPU1 --define=_FLASH --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="device/F2837xD_CodeStartBranch.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/CPU1_FLASH/syscfg" --obj_directory="device" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../device/F2837xD_CodeStartBranch.asm"
+Finished building: "../device/F2837xD_CodeStartBranch.asm"
+ 
+Building file: "syscfg/c2000ware_libraries.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=CPU1 --define=_FLASH --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="syscfg/c2000ware_libraries.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/CPU1_FLASH/syscfg" --obj_directory="syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "syscfg/c2000ware_libraries.c"
+Finished building: "syscfg/c2000ware_libraries.c"
+ 
+Building file: "../LED_Toggle_CPU_Timer.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=CPU1 --define=_FLASH --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="LED_Toggle_CPU_Timer.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/CPU1_FLASH/syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../LED_Toggle_CPU_Timer.c"
+Finished building: "../LED_Toggle_CPU_Timer.c"
+ 
+Building file: "syscfg/board.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=CPU1 --define=_FLASH --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="syscfg/board.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/CPU1_FLASH/syscfg" --obj_directory="syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "syscfg/board.c"
+Finished building: "syscfg/board.c"
+ 
+Building file: "../device/device.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=CPU1 --define=_FLASH --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="device/device.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/CPU1_FLASH/syscfg" --obj_directory="device" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../device/device.c"
+Finished building: "../device/device.c"
+ 
+Building target: "LED_Toggle_CPU_Timer.out"
+Invoking: C2000 Linker
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --define=DEBUG --define=CPU1 --define=_FLASH --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"LED_Toggle_CPU_Timer.map" --heap_size=0x200 --stack_size=0x3F8 --warn_sections -i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/lib" -i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="LED_Toggle_CPU_Timer_linkInfo.xml" --entry_point=code_start --rom_model -o "LED_Toggle_CPU_Timer.out" "./LED_Toggle_CPU_Timer.obj" "./syscfg/board.obj" "./syscfg/c2000ware_libraries.obj" "./device/F2837xD_CodeStartBranch.obj" "./device/device.obj" "../2837xD_FLASH_lnk_cpu1.cmd" "C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/ccs/Debug/driverlib.lib"  -llibc.a 
+<Linking>
+Finished building target: "LED_Toggle_CPU_Timer.out"
+ 
+
+**** Build Finished ****
+
+**** Clean-only build of configuration CPU1_RAM for project LED_Toggle_CPU_Timer ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 clean -O 
+ 
+DEL /F  "syscfg\board.h" "syscfg\board.cmd.genlibs" "syscfg\board.json" "syscfg\pinmux.csv" "syscfg\c2000ware_libraries.cmd.genlibs" "syscfg\c2000ware_libraries.h" "syscfg\clocktree.h"  "syscfg\board.c" "syscfg\board.opt" "syscfg\c2000ware_libraries.opt" "syscfg\c2000ware_libraries.c"  "LED_Toggle_CPU_Timer.out" 
+DEL /F "LED_Toggle.obj" "syscfg\board.obj" "syscfg\c2000ware_libraries.obj" "device\F2837xD_CodeStartBranch.obj" "device\device.obj" 
+DEL /F "LED_Toggle.d" "syscfg\board.d" "syscfg\c2000ware_libraries.d" "device\device.d" 
+DEL /F "device\F2837xD_CodeStartBranch.d" 
+RMDIR /S/Q  "syscfg" 
+Could Not Find C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_RAM\LED_Toggle_CPU_Timer.out
+Could Not Find C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_RAM\device\F2837xD_CodeStartBranch.d
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_RAM for project LED_Toggle_CPU_Timer ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../LED_Toggle_CPU_Timer.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1240/ccs/utils/sysconfig_1.21.0/sysconfig_cli.bat" --script "C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/LED_Toggle_CPU_Timer.syscfg" -o "syscfg" -s "C:/ti/c2000/C2000Ware_5_04_00_00/.metadata/sdk.json" -d "F2837xD" --compiler ccs
+Running script...
+Validating...
+Generating Code (LED_Toggle_CPU_Timer.syscfg)...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_RAM\syscfg\board.c...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_RAM\syscfg\board.h...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_RAM\syscfg\board.cmd.genlibs...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_RAM\syscfg\board.opt...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_RAM\syscfg\board.json...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_RAM\syscfg\pinmux.csv...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_RAM\syscfg\c2000ware_libraries.cmd.genlibs...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_RAM\syscfg\c2000ware_libraries.opt...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_RAM\syscfg\c2000ware_libraries.c...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_RAM\syscfg\c2000ware_libraries.h...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_RAM\syscfg\clocktree.h...
+Finished building: "../LED_Toggle_CPU_Timer.syscfg"
+ 
+Building file: "../device/F2837xD_CodeStartBranch.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="device/F2837xD_CodeStartBranch.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/CPU1_RAM/syscfg" --obj_directory="device" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../device/F2837xD_CodeStartBranch.asm"
+Finished building: "../device/F2837xD_CodeStartBranch.asm"
+ 
+Building file: "../LED_Toggle_CPU_Timer.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="LED_Toggle_CPU_Timer.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/CPU1_RAM/syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../LED_Toggle_CPU_Timer.c"
+Finished building: "../LED_Toggle_CPU_Timer.c"
+ 
+Building file: "syscfg/c2000ware_libraries.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="syscfg/c2000ware_libraries.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/CPU1_RAM/syscfg" --obj_directory="syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "syscfg/c2000ware_libraries.c"
+Finished building: "syscfg/c2000ware_libraries.c"
+ 
+Building file: "syscfg/board.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="syscfg/board.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/CPU1_RAM/syscfg" --obj_directory="syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "syscfg/board.c"
+Finished building: "syscfg/board.c"
+ 
+Building file: "../device/device.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="device/device.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/CPU1_RAM/syscfg" --obj_directory="device" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../device/device.c"
+Finished building: "../device/device.c"
+ 
+Building target: "LED_Toggle_CPU_Timer.out"
+Invoking: C2000 Linker
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --define=DEBUG --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"LED_Toggle_CPU_Timer.map" --heap_size=0x200 --stack_size=0x3F8 --warn_sections -i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/lib" -i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --reread_libs --define=RAM --diag_wrap=off --display_error_number --xml_link_info="LED_Toggle_CPU_Timer_linkInfo.xml" --entry_point=code_start --rom_model -o "LED_Toggle_CPU_Timer.out" "./LED_Toggle_CPU_Timer.obj" "./syscfg/board.obj" "./syscfg/c2000ware_libraries.obj" "./device/F2837xD_CodeStartBranch.obj" "./device/device.obj" "../2837xD_RAM_lnk_cpu1.cmd" "C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/ccs/Debug/driverlib.lib"  -llibc.a 
+<Linking>
+Finished building target: "LED_Toggle_CPU_Timer.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_RAM for project LED_Toggle_CPU_Timer ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'LED_Toggle_CPU_Timer.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_RAM for project LED_Toggle_CPU_Timer ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../LED_Toggle_CPU_Timer.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="LED_Toggle_CPU_Timer.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/CPU1_RAM/syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../LED_Toggle_CPU_Timer.c"
+Finished building: "../LED_Toggle_CPU_Timer.c"
+ 
+Building target: "LED_Toggle_CPU_Timer.out"
+Invoking: C2000 Linker
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --define=DEBUG --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"LED_Toggle_CPU_Timer.map" --heap_size=0x200 --stack_size=0x3F8 --warn_sections -i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/lib" -i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --reread_libs --define=RAM --diag_wrap=off --display_error_number --xml_link_info="LED_Toggle_CPU_Timer_linkInfo.xml" --entry_point=code_start --rom_model -o "LED_Toggle_CPU_Timer.out" "./LED_Toggle_CPU_Timer.obj" "./syscfg/board.obj" "./syscfg/c2000ware_libraries.obj" "./device/F2837xD_CodeStartBranch.obj" "./device/device.obj" "../2837xD_RAM_lnk_cpu1.cmd" "C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/ccs/Debug/driverlib.lib"  -llibc.a 
+<Linking>
+Finished building target: "LED_Toggle_CPU_Timer.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_RAM for project LED_Toggle_CPU_Timer ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'LED_Toggle_CPU_Timer.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_RAM for project LED_Toggle_CPU_Timer ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../LED_Toggle_CPU_Timer.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1240/ccs/utils/sysconfig_1.21.0/sysconfig_cli.bat" --script "C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/LED_Toggle_CPU_Timer.syscfg" -o "syscfg" -s "C:/ti/c2000/C2000Ware_5_04_00_00/.metadata/sdk.json" -d "F2837xD" --compiler ccs
+Running script...
+Validating...
+Generating Code (LED_Toggle_CPU_Timer.syscfg)...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_RAM\syscfg\board.c...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_RAM\syscfg\board.h...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_RAM\syscfg\board.cmd.genlibs...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_RAM\syscfg\board.opt...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_RAM\syscfg\board.json...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_RAM\syscfg\pinmux.csv...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_RAM\syscfg\c2000ware_libraries.cmd.genlibs...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_RAM\syscfg\c2000ware_libraries.opt...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_RAM\syscfg\c2000ware_libraries.c...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_RAM\syscfg\c2000ware_libraries.h...
+Writing C:\Users\DELL\GitHub\C2000\LED_Toggle_CPU_Timer\CPU1_RAM\syscfg\clocktree.h...
+Finished building: "../LED_Toggle_CPU_Timer.syscfg"
+ 
+Building file: "../device/F2837xD_CodeStartBranch.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="device/F2837xD_CodeStartBranch.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/CPU1_RAM/syscfg" --obj_directory="device" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../device/F2837xD_CodeStartBranch.asm"
+Finished building: "../device/F2837xD_CodeStartBranch.asm"
+ 
+Building file: "../LED_Toggle_CPU_Timer.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="LED_Toggle_CPU_Timer.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/CPU1_RAM/syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../LED_Toggle_CPU_Timer.c"
+Finished building: "../LED_Toggle_CPU_Timer.c"
+ 
+Building file: "../device/device.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="device/device.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/CPU1_RAM/syscfg" --obj_directory="device" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../device/device.c"
+Finished building: "../device/device.c"
+ 
+Building file: "syscfg/c2000ware_libraries.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="syscfg/c2000ware_libraries.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/CPU1_RAM/syscfg" --obj_directory="syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "syscfg/c2000ware_libraries.c"
+Finished building: "syscfg/c2000ware_libraries.c"
+ 
+Building file: "syscfg/board.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --define=DEBUG --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="syscfg/board.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/LED_Toggle_CPU_Timer/CPU1_RAM/syscfg" --obj_directory="syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "syscfg/board.c"
+Finished building: "syscfg/board.c"
+ 
+Building target: "LED_Toggle_CPU_Timer.out"
+Invoking: C2000 Linker
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --define=DEBUG --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"LED_Toggle_CPU_Timer.map" --heap_size=0x200 --stack_size=0x3F8 --warn_sections -i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/lib" -i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --reread_libs --define=RAM --diag_wrap=off --display_error_number --xml_link_info="LED_Toggle_CPU_Timer_linkInfo.xml" --entry_point=code_start --rom_model -o "LED_Toggle_CPU_Timer.out" "./LED_Toggle_CPU_Timer.obj" "./syscfg/board.obj" "./syscfg/c2000ware_libraries.obj" "./device/F2837xD_CodeStartBranch.obj" "./device/device.obj" "../2837xD_RAM_lnk_cpu1.cmd" "C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/ccs/Debug/driverlib.lib"  -llibc.a 
+<Linking>
+Finished building target: "LED_Toggle_CPU_Timer.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_RAM for project LED_Toggle_CPU_Timer ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'LED_Toggle_CPU_Timer.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_RAM for project LED_Toggle_CPU_Timer ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'LED_Toggle_CPU_Timer.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_RAM for project LED_Toggle ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building target: "LED_Toggle.out"
+Invoking: C2000 Linker
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --define=DEBUG --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"LED_Toggle.map" --heap_size=0x200 --stack_size=0x3F8 --warn_sections -i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/lib" -i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --reread_libs --define=RAM --diag_wrap=off --display_error_number --xml_link_info="LED_Toggle_linkInfo.xml" --entry_point=code_start --rom_model -o "LED_Toggle.out" "./LED_Toggle.obj" "./syscfg/board.obj" "./syscfg/c2000ware_libraries.obj" "./device/F2837xD_CodeStartBranch.obj" "./device/device.obj" "../2837xD_RAM_lnk_cpu1.cmd" "C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/ccs/Debug/driverlib.lib"  -llibc.a 
+<Linking>
+Finished building target: "LED_Toggle.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_FLASH for project LED_Toggle ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building target: "LED_Toggle.out"
+Invoking: C2000 Linker
+"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --define=DEBUG --define=CPU1 --define=_FLASH --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"LED_Toggle.map" --heap_size=0x200 --stack_size=0x3F8 --warn_sections -i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/lib" -i"C:/ti/ccs1240/ccs/tools/compiler/ti-cgt-c2000_22.6.0.LTS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="LED_Toggle_linkInfo.xml" --entry_point=code_start --rom_model -o "LED_Toggle.out" "./LED_Toggle.obj" "./syscfg/board.obj" "./syscfg/c2000ware_libraries.obj" "./device/F2837xD_CodeStartBranch.obj" "./device/device.obj" "../2837xD_FLASH_lnk_cpu1.cmd" "C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/ccs/Debug/driverlib.lib"  -llibc.a 
+<Linking>
+Finished building target: "LED_Toggle.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_FLASH for project LED_Toggle ****
+
+"C:\\ti\\ccs1240\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'LED_Toggle.out' is up to date.
+
+**** Build Finished ****
+
+**** Clean-only build of configuration CPU1_RAM for project i2t_SSCB_syscfg ****
+
+"C:\\ti\\ccs1270\\ccs\\utils\\bin\\gmake" -k -j 20 clean -O 
+ 
+DEL /F  "syscfg\error.h"  "i2t_SSCB_with_syscfg.out" 
+DEL /F "i2t_SSCB_syscfg.obj" "device\F2837xD_CodeStartBranch.obj" "device\device.obj" 
+DEL /F "i2t_SSCB_syscfg.d" "device\device.d" 
+DEL /F "device\F2837xD_CodeStartBranch.d" 
+RMDIR /S/Q  "syscfg" 
+Could Not Find C:\Users\DELL\GitHub\Efuse_SSCB\DSP+PIC codes\I2t codes\i2t_SSCB_with_syscfg\CPU1_RAM\syscfg\error.h
+Could Not Find C:\Users\DELL\GitHub\Efuse_SSCB\DSP+PIC codes\I2t codes\i2t_SSCB_with_syscfg\CPU1_RAM\device\F2837xD_CodeStartBranch.d
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_RAM for project i2t_SSCB_syscfg ****
+
+"C:\\ti\\ccs1270\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../lab_blinkyled_launchpad.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1270/ccs/utils/sysconfig_1.20.0/sysconfig_cli.bat" --script "C:/Users/DELL/GitHub/Efuse_SSCB/DSP+PIC codes/I2t codes/i2t_SSCB_with_syscfg/lab_blinkyled_launchpad.syscfg" -o "syscfg" -s "/.metadata/sdk.json" -b "/boards/LAUNCHXL_F28379D" --compiler ccs
+subdir_rules.mk:16: recipe for target 'build-737726977' failed
+gmake: *** No rule to make target 'C:/ti/ccs1270/ccs/eclipse/driverlib/f2837xd/driverlib/ccs/Debug/driverlib.lib', needed by 'all'.
+Invalid argument '-s': File "C:\.metadata\sdk.json" does not exist
+gmake: *** [build-737726977] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Clean-only build of configuration CPU1_RAM for project i2t_SSCB_syscfg ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 20 clean -O 
+ 
+DEL /F  "syscfg\board.h" "syscfg\board.cmd.genlibs" "syscfg\board.json" "syscfg\pinmux.csv" "syscfg\epwm.dot" "syscfg\adc.dot" "syscfg\c2000ware_libraries.cmd.genlibs" "syscfg\c2000ware_libraries.h" "syscfg\clocktree.h"  "syscfg\board.c" "syscfg\board.opt" "syscfg\c2000ware_libraries.opt" "syscfg\c2000ware_libraries.c"  "i2t_SSCB_syscfg.out" 
+DEL /F "syscfg\board.obj" "syscfg\c2000ware_libraries.obj" "i2t_SSCB_syscfg.obj" "device\F2837xD_CodeStartBranch.obj" "device\device.obj" 
+DEL /F "syscfg\board.d" "syscfg\c2000ware_libraries.d" "i2t_SSCB_syscfg.d" "device\device.d" 
+DEL /F "device\F2837xD_CodeStartBranch.d" 
+RMDIR /S/Q  "syscfg" 
+Could Not Find C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\device\F2837xD_CodeStartBranch.d
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_RAM for project i2t_SSCB_syscfg ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../i2t_SSCB.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1281/ccs/utils/sysconfig_1.21.0/sysconfig_cli.bat" --script "C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/i2t_SSCB.syscfg" -o "syscfg" -s "C:/ti/c2000/C2000Ware_5_04_00_00/.metadata/sdk.json" -b "/boards/LAUNCHXL_F28379D" --compiler ccs
+Warning: SysConfig has been updated to use standard TI part numbers. The device TMS320F28377D has been automatically selected. If this is not the desired please open SysConfig to change it.
+Running script...
+Validating...
+info: myEPWM1(/driverlib/epwm.js) epwmTimebase_clockDiv: For perfectly synchronized TBCLKs across multiple EPWM modules, the prescaler bits in the TBCTL register of each EPWM module must be set identically
+info: myEPWM1(/driverlib/epwm.js) epwmActionQualifier_t1Source: T1/T2 selection and configuration of a trip/digital-compare event is indpendent of the configuration of that event in the Trip-Zone submodule
+info: myEPWM1(/driverlib/epwm.js) epwmActionQualifier_t2Source: T1/T2 selection and configuration of a trip/digital-compare event is indpendent of the configuration of that event in the Trip-Zone submodule
+Generating Code (i2t_SSCB.syscfg)...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\board.c...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\board.h...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\board.cmd.genlibs...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\board.opt...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\board.json...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\pinmux.csv...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\epwm.dot...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\adc.dot...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\c2000ware_libraries.cmd.genlibs...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\c2000ware_libraries.opt...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\c2000ware_libraries.c...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\c2000ware_libraries.h...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\clocktree.h...
+Finished building: "../i2t_SSCB.syscfg"
+ 
+Building file: "../device/F2837xD_CodeStartBranch.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="device/F2837xD_CodeStartBranch.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/CPU1_RAM/syscfg" --obj_directory="device" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../device/F2837xD_CodeStartBranch.asm"
+Finished building: "../device/F2837xD_CodeStartBranch.asm"
+ 
+Building file: "../i2t_SSCB_syscfg.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="i2t_SSCB_syscfg.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/CPU1_RAM/syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../i2t_SSCB_syscfg.c"
+"../i2t_SSCB_syscfg.c", line 97 (col. 13): advice #3195-D: (Performance) EABI double precision is 64-bits as opposed to 32-bits for COFF. Consider changing doubles to floats for improved performance in FPU32-mode.
+"../i2t_SSCB_syscfg.c", line 97 (col. 19): advice #3195-D: (Performance) EABI double precision is 64-bits as opposed to 32-bits for COFF. Consider changing doubles to floats for improved performance in FPU32-mode.
+"../i2t_SSCB_syscfg.c", line 97 (col. 21): advice #3195-D: (Performance) EABI double precision is 64-bits as opposed to 32-bits for COFF. Consider changing doubles to floats for improved performance in FPU32-mode.
+Finished building: "../i2t_SSCB_syscfg.c"
+ 
+Building file: "../device/device.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="device/device.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/CPU1_RAM/syscfg" --obj_directory="device" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../device/device.c"
+Finished building: "../device/device.c"
+ 
+Building file: "syscfg/c2000ware_libraries.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="syscfg/c2000ware_libraries.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/CPU1_RAM/syscfg" --obj_directory="syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "syscfg/c2000ware_libraries.c"
+Finished building: "syscfg/c2000ware_libraries.c"
+ 
+Building file: "syscfg/board.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="syscfg/board.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/CPU1_RAM/syscfg" --obj_directory="syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "syscfg/board.c"
+Finished building: "syscfg/board.c"
+ 
+Building target: "i2t_SSCB_syscfg.out"
+Invoking: C2000 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"i2t_SSCB_syscfg.map" --stack_size=0x100 --warn_sections -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="i2t_SSCB_syscfg_linkInfo.xml" --entry_point=code_start --rom_model -o "i2t_SSCB_syscfg.out" "./syscfg/board.obj" "./syscfg/c2000ware_libraries.obj" "./i2t_SSCB_syscfg.obj" "./device/F2837xD_CodeStartBranch.obj" "./device/device.obj" "../2837xD_RAM_lnk_cpu1.cmd" "C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/ccs/Debug/driverlib.lib"  -llibc.a 
+<Linking>
+Finished building target: "i2t_SSCB_syscfg.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_RAM for project i2t_SSCB_syscfg2 ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../i2t_SSCB.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1281/ccs/utils/sysconfig_1.21.0/sysconfig_cli.bat" --script "C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2/i2t_SSCB.syscfg" -o "syscfg" -s "C:/ti/c2000/C2000Ware_5_04_00_00/.metadata/sdk.json" -b "/boards/LAUNCHXL_F28379D" --compiler ccs
+Warning: SysConfig has been updated to use standard TI part numbers. The device TMS320F28377D has been automatically selected. If this is not the desired please open SysConfig to change it.
+Running script...
+Validating...
+info: myEPWM1(/driverlib/epwm.js) epwmTimebase_clockDiv: For perfectly synchronized TBCLKs across multiple EPWM modules, the prescaler bits in the TBCTL register of each EPWM module must be set identically
+info: myEPWM1(/driverlib/epwm.js) epwmActionQualifier_t1Source: T1/T2 selection and configuration of a trip/digital-compare event is indpendent of the configuration of that event in the Trip-Zone submodule
+info: myEPWM1(/driverlib/epwm.js) epwmActionQualifier_t2Source: T1/T2 selection and configuration of a trip/digital-compare event is indpendent of the configuration of that event in the Trip-Zone submodule
+Generating Code (i2t_SSCB.syscfg)...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\board.c...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\board.h...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\board.cmd.genlibs...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\board.opt...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\board.json...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\pinmux.csv...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\epwm.dot...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\adc.dot...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\c2000ware_libraries.cmd.genlibs...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\c2000ware_libraries.opt...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\c2000ware_libraries.c...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\c2000ware_libraries.h...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\clocktree.h...
+Finished building: "../i2t_SSCB.syscfg"
+ 
+Building file: "../i2t_SSCB.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1281/ccs/utils/sysconfig_1.21.0/sysconfig_cli.bat" --script "C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2/i2t_SSCB.syscfg" -o "syscfg" -s "C:/ti/c2000/C2000Ware_5_04_00_00/.metadata/sdk.json" -b "/boards/LAUNCHXL_F28379D" --compiler ccs
+Warning: SysConfig has been updated to use standard TI part numbers. The device TMS320F28377D has been automatically selected. If this is not the desired please open SysConfig to change it.
+Running script...
+Validating...
+info: myEPWM1(/driverlib/epwm.js) epwmTimebase_clockDiv: For perfectly synchronized TBCLKs across multiple EPWM modules, the prescaler bits in the TBCTL register of each EPWM module must be set identically
+info: myEPWM1(/driverlib/epwm.js) epwmActionQualifier_t1Source: T1/T2 selection and configuration of a trip/digital-compare event is indpendent of the configuration of that event in the Trip-Zone submodule
+info: myEPWM1(/driverlib/epwm.js) epwmActionQualifier_t2Source: T1/T2 selection and configuration of a trip/digital-compare event is indpendent of the configuration of that event in the Trip-Zone submodule
+Generating Code (i2t_SSCB.syscfg)...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\board.c...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\board.h...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\board.cmd.genlibs...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\board.opt...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\board.json...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\pinmux.csv...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\epwm.dot...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\adc.dot...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\c2000ware_libraries.cmd.genlibs...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\c2000ware_libraries.opt...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\c2000ware_libraries.c...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\c2000ware_libraries.h...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\clocktree.h...
+Finished building: "../i2t_SSCB.syscfg"
+ 
+Building target: "i2t_SSCB_syscfg2.out"
+Invoking: C2000 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"i2t_SSCB_syscfg2.map" --stack_size=0x100 --warn_sections -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="i2t_SSCB_syscfg2_linkInfo.xml" --entry_point=code_start --rom_model -o "i2t_SSCB_syscfg2.out" "./syscfg/board.obj" "./syscfg/c2000ware_libraries.obj" "./i2t_SSCB_syscfg.obj" "./device/F2837xD_CodeStartBranch.obj" "./device/device.obj" "../2837xD_RAM_lnk_cpu1.cmd" "C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/ccs/Debug/driverlib.lib"  -llibc.a 
+<Linking>
+Finished building target: "i2t_SSCB_syscfg2.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_RAM for project i2t_SSCB_syscfg2 ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../i2t_SSCB.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1281/ccs/utils/sysconfig_1.21.0/sysconfig_cli.bat" --script "C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2/i2t_SSCB.syscfg" -o "syscfg" -s "C:/ti/c2000/C2000Ware_5_04_00_00/.metadata/sdk.json" -b "/boards/LAUNCHXL_F28379D" --compiler ccs
+Warning: SysConfig has been updated to use standard TI part numbers. The device TMS320F28377D has been automatically selected. If this is not the desired please open SysConfig to change it.
+Running script...
+Validating...
+info: myEPWM1(/driverlib/epwm.js) epwmTimebase_clockDiv: For perfectly synchronized TBCLKs across multiple EPWM modules, the prescaler bits in the TBCTL register of each EPWM module must be set identically
+info: myEPWM1(/driverlib/epwm.js) epwmActionQualifier_t1Source: T1/T2 selection and configuration of a trip/digital-compare event is indpendent of the configuration of that event in the Trip-Zone submodule
+info: myEPWM1(/driverlib/epwm.js) epwmActionQualifier_t2Source: T1/T2 selection and configuration of a trip/digital-compare event is indpendent of the configuration of that event in the Trip-Zone submodule
+Generating Code (i2t_SSCB.syscfg)...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\board.c...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\board.h...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\board.cmd.genlibs...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\board.opt...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\board.json...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\pinmux.csv...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\epwm.dot...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\adc.dot...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\c2000ware_libraries.cmd.genlibs...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\c2000ware_libraries.opt...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\c2000ware_libraries.c...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\c2000ware_libraries.h...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\clocktree.h...
+Finished building: "../i2t_SSCB.syscfg"
+ 
+Building file: "../i2t_SSCB.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1281/ccs/utils/sysconfig_1.21.0/sysconfig_cli.bat" --script "C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2/i2t_SSCB.syscfg" -o "syscfg" -s "C:/ti/c2000/C2000Ware_5_04_00_00/.metadata/sdk.json" -b "/boards/LAUNCHXL_F28379D" --compiler ccs
+Warning: SysConfig has been updated to use standard TI part numbers. The device TMS320F28377D has been automatically selected. If this is not the desired please open SysConfig to change it.
+Running script...
+Validating...
+info: myEPWM1(/driverlib/epwm.js) epwmTimebase_clockDiv: For perfectly synchronized TBCLKs across multiple EPWM modules, the prescaler bits in the TBCTL register of each EPWM module must be set identically
+info: myEPWM1(/driverlib/epwm.js) epwmActionQualifier_t1Source: T1/T2 selection and configuration of a trip/digital-compare event is indpendent of the configuration of that event in the Trip-Zone submodule
+info: myEPWM1(/driverlib/epwm.js) epwmActionQualifier_t2Source: T1/T2 selection and configuration of a trip/digital-compare event is indpendent of the configuration of that event in the Trip-Zone submodule
+Generating Code (i2t_SSCB.syscfg)...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\board.c...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\board.h...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\board.cmd.genlibs...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\board.opt...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\board.json...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\pinmux.csv...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\epwm.dot...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\adc.dot...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\c2000ware_libraries.cmd.genlibs...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\c2000ware_libraries.opt...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\c2000ware_libraries.c...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\c2000ware_libraries.h...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\clocktree.h...
+Finished building: "../i2t_SSCB.syscfg"
+ 
+
+**** Build Finished ****
+
+**** Clean-only build of configuration CPU1_RAM for project i2t_SSCB_syscfg2 ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 20 clean -O 
+ 
+DEL /F  "syscfg\board.h" "syscfg\board.cmd.genlibs" "syscfg\board.json" "syscfg\pinmux.csv" "syscfg\epwm.dot" "syscfg\adc.dot" "syscfg\c2000ware_libraries.cmd.genlibs" "syscfg\c2000ware_libraries.h" "syscfg\clocktree.h"  "syscfg\board.c" "syscfg\board.opt" "syscfg\c2000ware_libraries.opt" "syscfg\c2000ware_libraries.c"  "i2t_SSCB_syscfg2.out" 
+DEL /F "syscfg\board.obj" "syscfg\c2000ware_libraries.obj" "i2t_SSCB_syscfg.obj" "device\F2837xD_CodeStartBranch.obj" "device\device.obj" 
+DEL /F "syscfg\board.d" "syscfg\c2000ware_libraries.d" "i2t_SSCB_syscfg.d" "device\device.d" 
+DEL /F "device\F2837xD_CodeStartBranch.d" 
+RMDIR /S/Q  "syscfg" 
+Could Not Find C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\device\F2837xD_CodeStartBranch.d
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Clean-only build of configuration CPU1_RAM for project i2t_SSCB_syscfg2 ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 20 clean -O 
+ 
+DEL /F  "syscfg\board.h" "syscfg\board.cmd.genlibs" "syscfg\board.json" "syscfg\pinmux.csv" "syscfg\epwm.dot" "syscfg\adc.dot" "syscfg\c2000ware_libraries.cmd.genlibs" "syscfg\c2000ware_libraries.h" "syscfg\clocktree.h"  "syscfg\board.c" "syscfg\board.opt" "syscfg\c2000ware_libraries.opt" "syscfg\c2000ware_libraries.c"  "i2t_SSCB_syscfg2.out" 
+DEL /F "syscfg\board.obj" "syscfg\c2000ware_libraries.obj" "i2t_SSCB_syscfg.obj" "device\F2837xD_CodeStartBranch.obj" "device\device.obj" 
+DEL /F "syscfg\board.d" "syscfg\c2000ware_libraries.d" "i2t_SSCB_syscfg.d" "device\device.d" 
+DEL /F "device\F2837xD_CodeStartBranch.d" 
+RMDIR /S/Q  "syscfg" 
+Could Not Find C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\device\F2837xD_CodeStartBranch.d
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_RAM for project i2t_SSCB_syscfg2 ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../i2t_SSCB.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1281/ccs/utils/sysconfig_1.21.0/sysconfig_cli.bat" --script "C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2/i2t_SSCB.syscfg" -o "syscfg" -s "C:/ti/c2000/C2000Ware_5_04_00_00/.metadata/sdk.json" -b "/boards/LAUNCHXL_F28379D" --compiler ccs
+Warning: SysConfig has been updated to use standard TI part numbers. The device TMS320F28377D has been automatically selected. If this is not the desired please open SysConfig to change it.
+Running script...
+Validating...
+info: myEPWM1(/driverlib/epwm.js) epwmTimebase_clockDiv: For perfectly synchronized TBCLKs across multiple EPWM modules, the prescaler bits in the TBCTL register of each EPWM module must be set identically
+info: myEPWM1(/driverlib/epwm.js) epwmActionQualifier_t1Source: T1/T2 selection and configuration of a trip/digital-compare event is indpendent of the configuration of that event in the Trip-Zone submodule
+info: myEPWM1(/driverlib/epwm.js) epwmActionQualifier_t2Source: T1/T2 selection and configuration of a trip/digital-compare event is indpendent of the configuration of that event in the Trip-Zone submodule
+Generating Code (i2t_SSCB.syscfg)...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\board.c...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\board.h...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\board.cmd.genlibs...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\board.opt...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\board.json...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\pinmux.csv...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\epwm.dot...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\adc.dot...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\c2000ware_libraries.cmd.genlibs...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\c2000ware_libraries.opt...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\c2000ware_libraries.c...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\c2000ware_libraries.h...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\clocktree.h...
+Finished building: "../i2t_SSCB.syscfg"
+ 
+Building file: "../device/F2837xD_CodeStartBranch.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="device/F2837xD_CodeStartBranch.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2/CPU1_RAM/syscfg" --obj_directory="device" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../device/F2837xD_CodeStartBranch.asm"
+Finished building: "../device/F2837xD_CodeStartBranch.asm"
+ 
+Building file: "../i2t_SSCB_syscfg.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="i2t_SSCB_syscfg.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2/CPU1_RAM/syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../i2t_SSCB_syscfg.c"
+"../i2t_SSCB_syscfg.c", line 97 (col. 13): advice #3195-D: (Performance) EABI double precision is 64-bits as opposed to 32-bits for COFF. Consider changing doubles to floats for improved performance in FPU32-mode.
+"../i2t_SSCB_syscfg.c", line 97 (col. 19): advice #3195-D: (Performance) EABI double precision is 64-bits as opposed to 32-bits for COFF. Consider changing doubles to floats for improved performance in FPU32-mode.
+"../i2t_SSCB_syscfg.c", line 97 (col. 21): advice #3195-D: (Performance) EABI double precision is 64-bits as opposed to 32-bits for COFF. Consider changing doubles to floats for improved performance in FPU32-mode.
+Finished building: "../i2t_SSCB_syscfg.c"
+ 
+Building file: "../device/device.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="device/device.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2/CPU1_RAM/syscfg" --obj_directory="device" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../device/device.c"
+Finished building: "../device/device.c"
+ 
+Building file: "syscfg/c2000ware_libraries.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="syscfg/c2000ware_libraries.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2/CPU1_RAM/syscfg" --obj_directory="syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "syscfg/c2000ware_libraries.c"
+Finished building: "syscfg/c2000ware_libraries.c"
+ 
+Building file: "syscfg/board.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="syscfg/board.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2/CPU1_RAM/syscfg" --obj_directory="syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "syscfg/board.c"
+Finished building: "syscfg/board.c"
+ 
+Building target: "i2t_SSCB_syscfg2.out"
+Invoking: C2000 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"i2t_SSCB_syscfg2.map" --stack_size=0x100 --warn_sections -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="i2t_SSCB_syscfg2_linkInfo.xml" --entry_point=code_start --rom_model -o "i2t_SSCB_syscfg2.out" "./syscfg/board.obj" "./syscfg/c2000ware_libraries.obj" "./i2t_SSCB_syscfg.obj" "./device/F2837xD_CodeStartBranch.obj" "./device/device.obj" "../2837xD_RAM_lnk_cpu1.cmd" "C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib/ccs/Debug/driverlib.lib"  -llibc.a 
+<Linking>
+Finished building target: "i2t_SSCB_syscfg2.out"
+ 
+
+**** Build Finished ****
+Buildfile generation error occurred..
+Product c2000ware_software_package v5.1.0.00 is not currently installed and no compatible version is available. Please install this product or a compatible version.
+Build stopped..
+Buildfile generation error occurred..
+Product c2000ware_software_package v5.1.0.00 is not currently installed and no compatible version is available. Please install this product or a compatible version.
+Build stopped..
+Buildfile generation error occurred..
+Product c2000ware_software_package v5.1.0.00 is not currently installed and no compatible version is available. Please install this product or a compatible version.
+Build stopped..
+
+**** Clean-only build of configuration CPU1_RAM for project i2t_SSCB_syscfg2 ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 20 clean -O 
+ 
+DEL /F  "syscfg\error.h"  "i2t_SSCB_syscfg2.out" 
+DEL /F "i2t_SSCB_syscfg.obj" "device\F2837xD_CodeStartBranch.obj" "device\device.obj" 
+DEL /F "i2t_SSCB_syscfg.d" "device\device.d" 
+DEL /F "device\F2837xD_CodeStartBranch.d" 
+RMDIR /S/Q  "syscfg" 
+Could Not Find C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\error.h
+Could Not Find C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\i2t_SSCB_syscfg2.out
+Could Not Find C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\device\F2837xD_CodeStartBranch.d
+Finished clean
+ 
+
+**** Build Finished ****
+Buildfile generation error occurred..
+Product c2000ware_software_package v5.1.0.00 is not currently installed and no compatible version is available. Please install this product or a compatible version.
+Build stopped..
+Buildfile generation error occurred..
+Product c2000ware_software_package v5.1.0.00 is not currently installed and no compatible version is available. Please install this product or a compatible version.
+Build stopped..
+Buildfile generation error occurred..
+Product c2000ware_software_package v5.1.0.00 is not currently installed and no compatible version is available. Please install this product or a compatible version.
+Build stopped..
+
+**** Build of configuration CPU1_RAM for project i2t_SSCB_syscfg ****
+
+"C:\\ti\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../i2t_SSCB.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1250/ccs/utils/sysconfig_1.18.0/sysconfig_cli.bat" -s "C:/ti/c2000/C2000Ware_5_01_00_00/.metadata/sdk.json" -b "/boards/LAUNCHXL_F28379D" --script "C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/i2t_SSCB.syscfg" -o "syscfg" --compiler ccs
+Running script...
+Validating...
+info: myEPWM1(/driverlib/epwm.js) epwmTimebase_clockDiv: For perfectly synchronized TBCLKs across multiple EPWM modules, the prescaler bits in the TBCTL register of each EPWM module must be set identically
+info: myEPWM1(/driverlib/epwm.js) epwmActionQualifier_t1Source: T1/T2 selection and configuration of a trip/digital-compare event is indpendent of the configuration of that event in the Trip-Zone submodule
+info: myEPWM1(/driverlib/epwm.js) epwmActionQualifier_t2Source: T1/T2 selection and configuration of a trip/digital-compare event is indpendent of the configuration of that event in the Trip-Zone submodule
+Generating Code (i2t_SSCB.syscfg)...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\board.c...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\board.h...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\board.cmd.genlibs...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\board.opt...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\pinmux.csv...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\epwm.dot...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\adc.dot...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\c2000ware_libraries.cmd.genlibs...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\c2000ware_libraries.opt...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\c2000ware_libraries.c...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\c2000ware_libraries.h...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\clocktree.h...
+Finished building: "../i2t_SSCB.syscfg"
+ 
+Building file: "../i2t_SSCB.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1250/ccs/utils/sysconfig_1.18.0/sysconfig_cli.bat" -s "C:/ti/c2000/C2000Ware_5_01_00_00/.metadata/sdk.json" -b "/boards/LAUNCHXL_F28379D" --script "C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/i2t_SSCB.syscfg" -o "syscfg" --compiler ccs
+Running script...
+Validating...
+info: myEPWM1(/driverlib/epwm.js) epwmTimebase_clockDiv: For perfectly synchronized TBCLKs across multiple EPWM modules, the prescaler bits in the TBCTL register of each EPWM module must be set identically
+info: myEPWM1(/driverlib/epwm.js) epwmActionQualifier_t1Source: T1/T2 selection and configuration of a trip/digital-compare event is indpendent of the configuration of that event in the Trip-Zone submodule
+info: myEPWM1(/driverlib/epwm.js) epwmActionQualifier_t2Source: T1/T2 selection and configuration of a trip/digital-compare event is indpendent of the configuration of that event in the Trip-Zone submodule
+Generating Code (i2t_SSCB.syscfg)...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\board.c...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\board.h...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\board.cmd.genlibs...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\board.opt...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\pinmux.csv...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\epwm.dot...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\adc.dot...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\c2000ware_libraries.cmd.genlibs...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\c2000ware_libraries.opt...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\c2000ware_libraries.c...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\c2000ware_libraries.h...
+Unchanged C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\clocktree.h...
+Finished building: "../i2t_SSCB.syscfg"
+ 
+Building file: "syscfg/board.c"
+Building file: "syscfg/c2000ware_libraries.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/device" --include_path="C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="syscfg/board.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/CPU1_RAM/syscfg" --obj_directory="syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "syscfg/board.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/device" --include_path="C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="syscfg/c2000ware_libraries.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/CPU1_RAM/syscfg" --obj_directory="syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "syscfg/c2000ware_libraries.c"
+Building file: "../i2t_SSCB_syscfg.c"
+Building file: "../device/F2837xD_CodeStartBranch.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/device" --include_path="C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="i2t_SSCB_syscfg.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/CPU1_RAM/syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../i2t_SSCB_syscfg.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/device" --include_path="C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="device/F2837xD_CodeStartBranch.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/CPU1_RAM/syscfg" --obj_directory="device" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../device/F2837xD_CodeStartBranch.asm"
+Building file: "../device/device.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/device" --include_path="C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="device/device.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/CPU1_RAM/syscfg" --obj_directory="device" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../device/device.c"
+Finished building: "../device/F2837xD_CodeStartBranch.asm"
+ 
+"../i2t_SSCB_syscfg.c", line 97 (col. 13): advice #3195-D: (Performance) EABI double precision is 64-bits as opposed to 32-bits for COFF. Consider changing doubles to floats for improved performance in FPU32-mode.
+"../i2t_SSCB_syscfg.c", line 97 (col. 19): advice #3195-D: (Performance) EABI double precision is 64-bits as opposed to 32-bits for COFF. Consider changing doubles to floats for improved performance in FPU32-mode.
+"../i2t_SSCB_syscfg.c", line 97 (col. 21): advice #3195-D: (Performance) EABI double precision is 64-bits as opposed to 32-bits for COFF. Consider changing doubles to floats for improved performance in FPU32-mode.
+Finished building: "../i2t_SSCB_syscfg.c"
+ 
+Finished building: "../device/device.c"
+Finished building: "syscfg/c2000ware_libraries.c"
+ 
+ 
+Finished building: "syscfg/board.c"
+ 
+Building target: "i2t_SSCB_syscfg.out"
+Invoking: C2000 Linker
+"C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"i2t_SSCB_syscfg.map" --stack_size=0x100 --warn_sections -i"C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/lib" -i"C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="i2t_SSCB_syscfg_linkInfo.xml" --entry_point=code_start --rom_model -o "i2t_SSCB_syscfg.out" "./syscfg/board.obj" "./syscfg/c2000ware_libraries.obj" "./i2t_SSCB_syscfg.obj" "./device/F2837xD_CodeStartBranch.obj" "./device/device.obj" "../2837xD_RAM_lnk_cpu1.cmd" "C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib/ccs/Debug/driverlib.lib"  -llibc.a 
+<Linking>
+Finished building target: "i2t_SSCB_syscfg.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_RAM for project i2t_SSCB_syscfg2 ****
+
+"C:\\ti\\ccs1260\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../i2t_SSCB.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1260/ccs/utils/sysconfig_1.19.0/sysconfig_cli.bat" --script "C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2/i2t_SSCB.syscfg" -o "syscfg" -s "C:/ti/c2000/C2000Ware_5_01_00_00/.metadata/sdk.json" -b "/boards/LAUNCHXL_F28379D" --compiler ccs
+Running script...
+Validating...
+info: myEPWM1(/driverlib/epwm.js) epwmTimebase_clockDiv: For perfectly synchronized TBCLKs across multiple EPWM modules, the prescaler bits in the TBCTL register of each EPWM module must be set identically
+info: myEPWM1(/driverlib/epwm.js) epwmActionQualifier_t1Source: T1/T2 selection and configuration of a trip/digital-compare event is indpendent of the configuration of that event in the Trip-Zone submodule
+info: myEPWM1(/driverlib/epwm.js) epwmActionQualifier_t2Source: T1/T2 selection and configuration of a trip/digital-compare event is indpendent of the configuration of that event in the Trip-Zone submodule
+Generating Code (i2t_SSCB.syscfg)...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\board.c...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\board.h...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\board.cmd.genlibs...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\board.opt...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\pinmux.csv...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\epwm.dot...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\adc.dot...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\c2000ware_libraries.cmd.genlibs...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\c2000ware_libraries.opt...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\c2000ware_libraries.c...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\c2000ware_libraries.h...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg2\CPU1_RAM\syscfg\clocktree.h...
+Finished building: "../i2t_SSCB.syscfg"
+ 
+Building file: "../device/F2837xD_CodeStartBranch.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2/device" --include_path="C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="device/F2837xD_CodeStartBranch.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2/CPU1_RAM/syscfg" --obj_directory="device" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../device/F2837xD_CodeStartBranch.asm"
+Finished building: "../device/F2837xD_CodeStartBranch.asm"
+ 
+Building file: "../i2t_SSCB_syscfg.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2/device" --include_path="C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="i2t_SSCB_syscfg.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2/CPU1_RAM/syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../i2t_SSCB_syscfg.c"
+"../i2t_SSCB_syscfg.c", line 97 (col. 13): advice #3195-D: (Performance) EABI double precision is 64-bits as opposed to 32-bits for COFF. Consider changing doubles to floats for improved performance in FPU32-mode.
+"../i2t_SSCB_syscfg.c", line 97 (col. 19): advice #3195-D: (Performance) EABI double precision is 64-bits as opposed to 32-bits for COFF. Consider changing doubles to floats for improved performance in FPU32-mode.
+"../i2t_SSCB_syscfg.c", line 97 (col. 21): advice #3195-D: (Performance) EABI double precision is 64-bits as opposed to 32-bits for COFF. Consider changing doubles to floats for improved performance in FPU32-mode.
+Finished building: "../i2t_SSCB_syscfg.c"
+ 
+Building file: "../device/device.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2/device" --include_path="C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="device/device.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2/CPU1_RAM/syscfg" --obj_directory="device" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../device/device.c"
+Finished building: "../device/device.c"
+ 
+Building file: "syscfg/c2000ware_libraries.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2/device" --include_path="C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="syscfg/c2000ware_libraries.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2/CPU1_RAM/syscfg" --obj_directory="syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "syscfg/c2000ware_libraries.c"
+Finished building: "syscfg/c2000ware_libraries.c"
+ 
+Building file: "syscfg/board.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2/device" --include_path="C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="syscfg/board.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg2/CPU1_RAM/syscfg" --obj_directory="syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "syscfg/board.c"
+Finished building: "syscfg/board.c"
+ 
+Building target: "i2t_SSCB_syscfg2.out"
+Invoking: C2000 Linker
+"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"i2t_SSCB_syscfg2.map" --stack_size=0x100 --warn_sections -i"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/lib" -i"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="i2t_SSCB_syscfg2_linkInfo.xml" --entry_point=code_start --rom_model -o "i2t_SSCB_syscfg2.out" "./syscfg/board.obj" "./syscfg/c2000ware_libraries.obj" "./i2t_SSCB_syscfg.obj" "./device/F2837xD_CodeStartBranch.obj" "./device/device.obj" "../2837xD_RAM_lnk_cpu1.cmd" "C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib/ccs/Debug/driverlib.lib"  -llibc.a 
+<Linking>
+Finished building target: "i2t_SSCB_syscfg2.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_RAM for project i2t_SSCB_syscfg ****
+
+"C:\\ti\\ccs1260\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../i2t_SSCB.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1260/ccs/utils/sysconfig_1.19.0/sysconfig_cli.bat" --script "C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/i2t_SSCB.syscfg" -o "syscfg" -s "C:/ti/c2000/C2000Ware_5_01_00_00/.metadata/sdk.json" -b "/boards/LAUNCHXL_F28379D" --compiler ccs
+Running script...
+Validating...
+info: myEPWM1(/driverlib/epwm.js) epwmTimebase_clockDiv: For perfectly synchronized TBCLKs across multiple EPWM modules, the prescaler bits in the TBCTL register of each EPWM module must be set identically
+info: myEPWM1(/driverlib/epwm.js) epwmActionQualifier_t1Source: T1/T2 selection and configuration of a trip/digital-compare event is indpendent of the configuration of that event in the Trip-Zone submodule
+info: myEPWM1(/driverlib/epwm.js) epwmActionQualifier_t2Source: T1/T2 selection and configuration of a trip/digital-compare event is indpendent of the configuration of that event in the Trip-Zone submodule
+Generating Code (i2t_SSCB.syscfg)...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\board.c...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\board.h...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\board.cmd.genlibs...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\board.opt...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\pinmux.csv...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\epwm.dot...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\adc.dot...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\c2000ware_libraries.cmd.genlibs...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\c2000ware_libraries.opt...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\c2000ware_libraries.c...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\c2000ware_libraries.h...
+Writing C:\Users\DELL\GitHub\C2000\i2t_SSCB_syscfg\CPU1_RAM\syscfg\clocktree.h...
+Finished building: "../i2t_SSCB.syscfg"
+ 
+Building file: "../device/F2837xD_CodeStartBranch.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/device" --include_path="C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="device/F2837xD_CodeStartBranch.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/CPU1_RAM/syscfg" --obj_directory="device" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../device/F2837xD_CodeStartBranch.asm"
+Finished building: "../device/F2837xD_CodeStartBranch.asm"
+ 
+Building file: "../i2t_SSCB_syscfg.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/device" --include_path="C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="i2t_SSCB_syscfg.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/CPU1_RAM/syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../i2t_SSCB_syscfg.c"
+"../i2t_SSCB_syscfg.c", line 97 (col. 13): advice #3195-D: (Performance) EABI double precision is 64-bits as opposed to 32-bits for COFF. Consider changing doubles to floats for improved performance in FPU32-mode.
+"../i2t_SSCB_syscfg.c", line 97 (col. 19): advice #3195-D: (Performance) EABI double precision is 64-bits as opposed to 32-bits for COFF. Consider changing doubles to floats for improved performance in FPU32-mode.
+"../i2t_SSCB_syscfg.c", line 97 (col. 21): advice #3195-D: (Performance) EABI double precision is 64-bits as opposed to 32-bits for COFF. Consider changing doubles to floats for improved performance in FPU32-mode.
+Finished building: "../i2t_SSCB_syscfg.c"
+ 
+Building file: "syscfg/c2000ware_libraries.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/device" --include_path="C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="syscfg/c2000ware_libraries.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/CPU1_RAM/syscfg" --obj_directory="syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "syscfg/c2000ware_libraries.c"
+Finished building: "syscfg/c2000ware_libraries.c"
+ 
+Building file: "../device/device.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/device" --include_path="C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="device/device.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/CPU1_RAM/syscfg" --obj_directory="device" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../device/device.c"
+Finished building: "../device/device.c"
+ 
+Building file: "syscfg/board.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/device" --include_path="C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="syscfg/board.d_raw" --include_path="C:/Users/DELL/GitHub/C2000/i2t_SSCB_syscfg/CPU1_RAM/syscfg" --obj_directory="syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "syscfg/board.c"
+Finished building: "syscfg/board.c"
+ 
+Building target: "i2t_SSCB_syscfg.out"
+Invoking: C2000 Linker
+"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"i2t_SSCB_syscfg.map" --stack_size=0x100 --warn_sections -i"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/lib" -i"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="i2t_SSCB_syscfg_linkInfo.xml" --entry_point=code_start --rom_model -o "i2t_SSCB_syscfg.out" "./syscfg/board.obj" "./syscfg/c2000ware_libraries.obj" "./i2t_SSCB_syscfg.obj" "./device/F2837xD_CodeStartBranch.obj" "./device/device.obj" "../2837xD_RAM_lnk_cpu1.cmd" "C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib/ccs/Debug/driverlib.lib"  -llibc.a 
+<Linking>
+Finished building target: "i2t_SSCB_syscfg.out"
+ 
+
+**** Build Finished ****
+
+**** Clean-only build of configuration CPU1_RAM for project i2t_SSCB_syscfg ****
+
+"C:\\ti\\ccs1260\\ccs\\utils\\bin\\gmake" -k -j 20 clean -O 
+ 
+DEL /F  "syscfg\board.h" "syscfg\board.cmd.genlibs" "syscfg\pinmux.csv" "syscfg\epwm.dot" "syscfg\adc.dot" "syscfg\c2000ware_libraries.cmd.genlibs" "syscfg\c2000ware_libraries.h" "syscfg\clocktree.h"  "syscfg\board.c" "syscfg\board.opt" "syscfg\c2000ware_libraries.opt" "syscfg\c2000ware_libraries.c"  "i2t_SSCB_syscfg.out" 
+DEL /F "syscfg\board.obj" "syscfg\c2000ware_libraries.obj" "i2t_SSCB_syscfg.obj" "device\F2837xD_CodeStartBranch.obj" "device\device.obj" 
+DEL /F "syscfg\board.d" "syscfg\c2000ware_libraries.d" "i2t_SSCB_syscfg.d" "device\device.d" 
+DEL /F "device\F2837xD_CodeStartBranch.d" 
+RMDIR /S/Q  "syscfg" 
+Could Not Find C:\Users\DELL\Desktop\Code_eFuse\i2t_Launchpad_F28379D_Code\i2t_SSCB_syscfg\CPU1_RAM\device\F2837xD_CodeStartBranch.d
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_RAM for project i2t_SSCB_syscfg ****
+
+"C:\\ti\\ccs1260\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../i2t_SSCB.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1260/ccs/utils/sysconfig_1.19.0/sysconfig_cli.bat" --script "C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg/i2t_SSCB.syscfg" -o "syscfg" -s "C:/ti/c2000/C2000Ware_5_01_00_00/.metadata/sdk.json" -b "/boards/LAUNCHXL_F28379D" --compiler ccs
+Running script...
+Validating...
+info: myEPWM1(/driverlib/epwm.js) epwmTimebase_clockDiv: For perfectly synchronized TBCLKs across multiple EPWM modules, the prescaler bits in the TBCTL register of each EPWM module must be set identically
+info: myEPWM1(/driverlib/epwm.js) epwmActionQualifier_t1Source: T1/T2 selection and configuration of a trip/digital-compare event is indpendent of the configuration of that event in the Trip-Zone submodule
+info: myEPWM1(/driverlib/epwm.js) epwmActionQualifier_t2Source: T1/T2 selection and configuration of a trip/digital-compare event is indpendent of the configuration of that event in the Trip-Zone submodule
+Generating Code (i2t_SSCB.syscfg)...
+Writing C:\Users\DELL\Desktop\Code_eFuse\i2t_Launchpad_F28379D_Code\i2t_SSCB_syscfg\CPU1_RAM\syscfg\board.c...
+Writing C:\Users\DELL\Desktop\Code_eFuse\i2t_Launchpad_F28379D_Code\i2t_SSCB_syscfg\CPU1_RAM\syscfg\board.h...
+Writing C:\Users\DELL\Desktop\Code_eFuse\i2t_Launchpad_F28379D_Code\i2t_SSCB_syscfg\CPU1_RAM\syscfg\board.cmd.genlibs...
+Writing C:\Users\DELL\Desktop\Code_eFuse\i2t_Launchpad_F28379D_Code\i2t_SSCB_syscfg\CPU1_RAM\syscfg\board.opt...
+Writing C:\Users\DELL\Desktop\Code_eFuse\i2t_Launchpad_F28379D_Code\i2t_SSCB_syscfg\CPU1_RAM\syscfg\pinmux.csv...
+Writing C:\Users\DELL\Desktop\Code_eFuse\i2t_Launchpad_F28379D_Code\i2t_SSCB_syscfg\CPU1_RAM\syscfg\epwm.dot...
+Writing C:\Users\DELL\Desktop\Code_eFuse\i2t_Launchpad_F28379D_Code\i2t_SSCB_syscfg\CPU1_RAM\syscfg\adc.dot...
+Writing C:\Users\DELL\Desktop\Code_eFuse\i2t_Launchpad_F28379D_Code\i2t_SSCB_syscfg\CPU1_RAM\syscfg\c2000ware_libraries.cmd.genlibs...
+Writing C:\Users\DELL\Desktop\Code_eFuse\i2t_Launchpad_F28379D_Code\i2t_SSCB_syscfg\CPU1_RAM\syscfg\c2000ware_libraries.opt...
+Writing C:\Users\DELL\Desktop\Code_eFuse\i2t_Launchpad_F28379D_Code\i2t_SSCB_syscfg\CPU1_RAM\syscfg\c2000ware_libraries.c...
+Writing C:\Users\DELL\Desktop\Code_eFuse\i2t_Launchpad_F28379D_Code\i2t_SSCB_syscfg\CPU1_RAM\syscfg\c2000ware_libraries.h...
+Writing C:\Users\DELL\Desktop\Code_eFuse\i2t_Launchpad_F28379D_Code\i2t_SSCB_syscfg\CPU1_RAM\syscfg\clocktree.h...
+Finished building: "../i2t_SSCB.syscfg"
+ 
+Building file: "../device/F2837xD_CodeStartBranch.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg" --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg/device" --include_path="C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="device/F2837xD_CodeStartBranch.d_raw" --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg/CPU1_RAM/syscfg" --obj_directory="device" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../device/F2837xD_CodeStartBranch.asm"
+Finished building: "../device/F2837xD_CodeStartBranch.asm"
+ 
+Building file: "../i2t_SSCB_syscfg.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg" --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg/device" --include_path="C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="i2t_SSCB_syscfg.d_raw" --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg/CPU1_RAM/syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../i2t_SSCB_syscfg.c"
+"../i2t_SSCB_syscfg.c", line 97 (col. 13): advice #3195-D: (Performance) EABI double precision is 64-bits as opposed to 32-bits for COFF. Consider changing doubles to floats for improved performance in FPU32-mode.
+"../i2t_SSCB_syscfg.c", line 97 (col. 19): advice #3195-D: (Performance) EABI double precision is 64-bits as opposed to 32-bits for COFF. Consider changing doubles to floats for improved performance in FPU32-mode.
+"../i2t_SSCB_syscfg.c", line 97 (col. 21): advice #3195-D: (Performance) EABI double precision is 64-bits as opposed to 32-bits for COFF. Consider changing doubles to floats for improved performance in FPU32-mode.
+Finished building: "../i2t_SSCB_syscfg.c"
+ 
+Building file: "syscfg/c2000ware_libraries.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg" --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg/device" --include_path="C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="syscfg/c2000ware_libraries.d_raw" --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg/CPU1_RAM/syscfg" --obj_directory="syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "syscfg/c2000ware_libraries.c"
+Finished building: "syscfg/c2000ware_libraries.c"
+ 
+Building file: "../device/device.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg" --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg/device" --include_path="C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="device/device.d_raw" --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg/CPU1_RAM/syscfg" --obj_directory="device" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../device/device.c"
+Finished building: "../device/device.c"
+ 
+Building file: "syscfg/board.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg" --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg/device" --include_path="C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="syscfg/board.d_raw" --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg/CPU1_RAM/syscfg" --obj_directory="syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "syscfg/board.c"
+Finished building: "syscfg/board.c"
+ 
+Building target: "i2t_SSCB_syscfg.out"
+Invoking: C2000 Linker
+"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"i2t_SSCB_syscfg.map" --stack_size=0x100 --warn_sections -i"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/lib" -i"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="i2t_SSCB_syscfg_linkInfo.xml" --entry_point=code_start --rom_model -o "i2t_SSCB_syscfg.out" "./syscfg/board.obj" "./syscfg/c2000ware_libraries.obj" "./i2t_SSCB_syscfg.obj" "./device/F2837xD_CodeStartBranch.obj" "./device/device.obj" "../2837xD_RAM_lnk_cpu1.cmd" "C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib/ccs/Debug/driverlib.lib"  -llibc.a 
+<Linking>
+Finished building target: "i2t_SSCB_syscfg.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_RAM for project i2t_SSCB_syscfg ****
+
+"C:\\ti\\ccs1260\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../i2t_SSCB_syscfg.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg" --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg/device" --include_path="C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="i2t_SSCB_syscfg.d_raw" --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg/CPU1_RAM/syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../i2t_SSCB_syscfg.c"
+ 
+>> Compilation failure
+subdir_rules.mk:37: recipe for target 'i2t_SSCB_syscfg.obj' failed
+"../i2t_SSCB_syscfg.c", line 74: error #20: identifier "my" is undefined
+"../i2t_SSCB_syscfg.c", line 75: error #167: too few arguments in function call
+"../i2t_SSCB_syscfg.c", line 75: error #18: expected a ")"
+3 errors detected in the compilation of "../i2t_SSCB_syscfg.c".
+gmake: *** [i2t_SSCB_syscfg.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_RAM for project i2t_SSCB_syscfg ****
+
+"C:\\ti\\ccs1260\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../i2t_SSCB_syscfg.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg" --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg/device" --include_path="C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="i2t_SSCB_syscfg.d_raw" --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg/CPU1_RAM/syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../i2t_SSCB_syscfg.c"
+ 
+>> Compilation failure
+subdir_rules.mk:37: recipe for target 'i2t_SSCB_syscfg.obj' failed
+"../i2t_SSCB_syscfg.c", line 74: error #20: identifier "my" is undefined
+"../i2t_SSCB_syscfg.c", line 75: error #167: too few arguments in function call
+"../i2t_SSCB_syscfg.c", line 75: error #18: expected a ")"
+3 errors detected in the compilation of "../i2t_SSCB_syscfg.c".
+gmake: *** [i2t_SSCB_syscfg.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_RAM for project i2t_SSCB_syscfg ****
+
+"C:\\ti\\ccs1260\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../i2t_SSCB_syscfg.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg" --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg/device" --include_path="C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="i2t_SSCB_syscfg.d_raw" --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg/CPU1_RAM/syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../i2t_SSCB_syscfg.c"
+"../i2t_SSCB_syscfg.c", line 97 (col. 13): advice #3195-D: (Performance) EABI double precision is 64-bits as opposed to 32-bits for COFF. Consider changing doubles to floats for improved performance in FPU32-mode.
+"../i2t_SSCB_syscfg.c", line 97 (col. 19): advice #3195-D: (Performance) EABI double precision is 64-bits as opposed to 32-bits for COFF. Consider changing doubles to floats for improved performance in FPU32-mode.
+"../i2t_SSCB_syscfg.c", line 97 (col. 21): advice #3195-D: (Performance) EABI double precision is 64-bits as opposed to 32-bits for COFF. Consider changing doubles to floats for improved performance in FPU32-mode.
+Finished building: "../i2t_SSCB_syscfg.c"
+ 
+Building target: "i2t_SSCB_syscfg.out"
+Invoking: C2000 Linker
+"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"i2t_SSCB_syscfg.map" --stack_size=0x100 --warn_sections -i"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/lib" -i"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="i2t_SSCB_syscfg_linkInfo.xml" --entry_point=code_start --rom_model -o "i2t_SSCB_syscfg.out" "./syscfg/board.obj" "./syscfg/c2000ware_libraries.obj" "./i2t_SSCB_syscfg.obj" "./device/F2837xD_CodeStartBranch.obj" "./device/device.obj" "../2837xD_RAM_lnk_cpu1.cmd" "C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib/ccs/Debug/driverlib.lib"  -llibc.a 
+<Linking>
+Finished building target: "i2t_SSCB_syscfg.out"
+ 
+
+**** Build Finished ****
+
+**** Clean-only build of configuration CPU1_FLASH for project i2t_SSCB_syscfg ****
+
+"C:\\ti\\ccs1260\\ccs\\utils\\bin\\gmake" -k -j 20 clean -O 
+ 
+DEL /F  "syscfg\board.h" "syscfg\board.cmd.genlibs" "syscfg\pinmux.csv" "syscfg\epwm.dot" "syscfg\adc.dot" "syscfg\c2000ware_libraries.cmd.genlibs" "syscfg\c2000ware_libraries.h" "syscfg\clocktree.h"  "syscfg\board.c" "syscfg\board.opt" "syscfg\c2000ware_libraries.opt" "syscfg\c2000ware_libraries.c"  "i2t_SSCB_syscfg.out" 
+DEL /F "syscfg\board.obj" "syscfg\c2000ware_libraries.obj" "i2t_SSCB_syscfg.obj" "device\F2837xD_CodeStartBranch.obj" "device\device.obj" 
+DEL /F "syscfg\board.d" "syscfg\c2000ware_libraries.d" "i2t_SSCB_syscfg.d" "device\device.d" 
+DEL /F "device\F2837xD_CodeStartBranch.d" 
+RMDIR /S/Q  "syscfg" 
+Could Not Find C:\Users\DELL\Desktop\Code_eFuse\i2t_Launchpad_F28379D_Code\i2t_SSCB_syscfg\CPU1_FLASH\i2t_SSCB_syscfg.out
+Could Not Find C:\Users\DELL\Desktop\Code_eFuse\i2t_Launchpad_F28379D_Code\i2t_SSCB_syscfg\CPU1_FLASH\i2t_SSCB_syscfg.obj
+Could Not Find C:\Users\DELL\Desktop\Code_eFuse\i2t_Launchpad_F28379D_Code\i2t_SSCB_syscfg\CPU1_FLASH\device\F2837xD_CodeStartBranch.d
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration CPU1_FLASH for project i2t_SSCB_syscfg ****
+
+"C:\\ti\\ccs1260\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../i2t_SSCB.syscfg"
+Invoking: SysConfig
+"C:/ti/ccs1260/ccs/utils/sysconfig_1.19.0/sysconfig_cli.bat" --script "C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg/i2t_SSCB.syscfg" -o "syscfg" -s "C:/ti/c2000/C2000Ware_5_01_00_00/.metadata/sdk.json" -b "/boards/LAUNCHXL_F28379D" --compiler ccs
+Running script...
+Validating...
+info: myEPWM1(/driverlib/epwm.js) epwmTimebase_clockDiv: For perfectly synchronized TBCLKs across multiple EPWM modules, the prescaler bits in the TBCTL register of each EPWM module must be set identically
+info: myEPWM1(/driverlib/epwm.js) epwmActionQualifier_t1Source: T1/T2 selection and configuration of a trip/digital-compare event is indpendent of the configuration of that event in the Trip-Zone submodule
+info: myEPWM1(/driverlib/epwm.js) epwmActionQualifier_t2Source: T1/T2 selection and configuration of a trip/digital-compare event is indpendent of the configuration of that event in the Trip-Zone submodule
+Generating Code (i2t_SSCB.syscfg)...
+Writing C:\Users\DELL\Desktop\Code_eFuse\i2t_Launchpad_F28379D_Code\i2t_SSCB_syscfg\CPU1_FLASH\syscfg\board.c...
+Writing C:\Users\DELL\Desktop\Code_eFuse\i2t_Launchpad_F28379D_Code\i2t_SSCB_syscfg\CPU1_FLASH\syscfg\board.h...
+Writing C:\Users\DELL\Desktop\Code_eFuse\i2t_Launchpad_F28379D_Code\i2t_SSCB_syscfg\CPU1_FLASH\syscfg\board.cmd.genlibs...
+Writing C:\Users\DELL\Desktop\Code_eFuse\i2t_Launchpad_F28379D_Code\i2t_SSCB_syscfg\CPU1_FLASH\syscfg\board.opt...
+Writing C:\Users\DELL\Desktop\Code_eFuse\i2t_Launchpad_F28379D_Code\i2t_SSCB_syscfg\CPU1_FLASH\syscfg\pinmux.csv...
+Writing C:\Users\DELL\Desktop\Code_eFuse\i2t_Launchpad_F28379D_Code\i2t_SSCB_syscfg\CPU1_FLASH\syscfg\epwm.dot...
+Writing C:\Users\DELL\Desktop\Code_eFuse\i2t_Launchpad_F28379D_Code\i2t_SSCB_syscfg\CPU1_FLASH\syscfg\adc.dot...
+Writing C:\Users\DELL\Desktop\Code_eFuse\i2t_Launchpad_F28379D_Code\i2t_SSCB_syscfg\CPU1_FLASH\syscfg\c2000ware_libraries.cmd.genlibs...
+Writing C:\Users\DELL\Desktop\Code_eFuse\i2t_Launchpad_F28379D_Code\i2t_SSCB_syscfg\CPU1_FLASH\syscfg\c2000ware_libraries.opt...
+Writing C:\Users\DELL\Desktop\Code_eFuse\i2t_Launchpad_F28379D_Code\i2t_SSCB_syscfg\CPU1_FLASH\syscfg\c2000ware_libraries.c...
+Writing C:\Users\DELL\Desktop\Code_eFuse\i2t_Launchpad_F28379D_Code\i2t_SSCB_syscfg\CPU1_FLASH\syscfg\c2000ware_libraries.h...
+Writing C:\Users\DELL\Desktop\Code_eFuse\i2t_Launchpad_F28379D_Code\i2t_SSCB_syscfg\CPU1_FLASH\syscfg\clocktree.h...
+Finished building: "../i2t_SSCB.syscfg"
+ 
+Building file: "../device/F2837xD_CodeStartBranch.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg" --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg/device" --include_path="C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --define=_FLASH --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="device/F2837xD_CodeStartBranch.d_raw" --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg/CPU1_FLASH/syscfg" --obj_directory="device" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../device/F2837xD_CodeStartBranch.asm"
+Finished building: "../device/F2837xD_CodeStartBranch.asm"
+ 
+Building file: "../i2t_SSCB_syscfg.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg" --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg/device" --include_path="C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --define=_FLASH --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="i2t_SSCB_syscfg.d_raw" --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg/CPU1_FLASH/syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../i2t_SSCB_syscfg.c"
+"../i2t_SSCB_syscfg.c", line 97 (col. 13): advice #3195-D: (Performance) EABI double precision is 64-bits as opposed to 32-bits for COFF. Consider changing doubles to floats for improved performance in FPU32-mode.
+"../i2t_SSCB_syscfg.c", line 97 (col. 19): advice #3195-D: (Performance) EABI double precision is 64-bits as opposed to 32-bits for COFF. Consider changing doubles to floats for improved performance in FPU32-mode.
+"../i2t_SSCB_syscfg.c", line 97 (col. 21): advice #3195-D: (Performance) EABI double precision is 64-bits as opposed to 32-bits for COFF. Consider changing doubles to floats for improved performance in FPU32-mode.
+Finished building: "../i2t_SSCB_syscfg.c"
+ 
+Building file: "syscfg/c2000ware_libraries.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg" --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg/device" --include_path="C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --define=_FLASH --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="syscfg/c2000ware_libraries.d_raw" --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg/CPU1_FLASH/syscfg" --obj_directory="syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "syscfg/c2000ware_libraries.c"
+Finished building: "syscfg/c2000ware_libraries.c"
+ 
+Building file: "../device/device.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg" --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg/device" --include_path="C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --define=_FLASH --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="device/device.d_raw" --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg/CPU1_FLASH/syscfg" --obj_directory="device" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../device/device.c"
+Finished building: "../device/device.c"
+ 
+Building file: "syscfg/board.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg" --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg/device" --include_path="C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --define=_FLASH --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="syscfg/board.d_raw" --include_path="C:/Users/DELL/Desktop/Code_eFuse/i2t_Launchpad_F28379D_Code/i2t_SSCB_syscfg/CPU1_FLASH/syscfg" --obj_directory="syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "syscfg/board.c"
+Finished building: "syscfg/board.c"
+ 
+Building target: "i2t_SSCB_syscfg.out"
+Invoking: C2000 Linker
+"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --define=DEBUG --define=_LAUNCHXL_F28379D --define=CPU1 --define=_FLASH --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"i2t_SSCB_syscfg.map" --stack_size=0x100 --warn_sections -i"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/lib" -i"C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="i2t_SSCB_syscfg_linkInfo.xml" --entry_point=code_start --rom_model -o "i2t_SSCB_syscfg.out" "./syscfg/board.obj" "./syscfg/c2000ware_libraries.obj" "./i2t_SSCB_syscfg.obj" "./device/F2837xD_CodeStartBranch.obj" "./device/device.obj" "../2837xD_FLASH_lnk_cpu1.cmd" "C:/ti/c2000/C2000Ware_5_01_00_00/driverlib/f2837xd/driverlib/ccs/Debug/driverlib.lib"  -llibc.a 
+<Linking>
+Finished building target: "i2t_SSCB_syscfg.out"
+ 
+
+**** Build Finished ****
